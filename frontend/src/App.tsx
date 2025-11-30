@@ -36,7 +36,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', file);
 
-      const result = await axios.post('http://localhost:5000/upload', formData, {
+      const result = await axios.post('https://pdf-docx-reader.onrender.com', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
